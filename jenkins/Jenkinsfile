@@ -26,5 +26,10 @@ pipeline {
                 echo 'Job complete!'
             }
         }
+        stage('PostComplete') {
+            steps {
+                echo 'This is after the complete alert'
+            }
+        }
     }
 }
